@@ -3,7 +3,12 @@ pluginManagement {
         google()
         mavenCentral()
         gradlePluginPortal()
-        maven(url = "https://jitpack.io")
+        maven(url = "https://jitpack.io") {
+            credentials {
+                username = "qndroid"
+                password = "jp_i8ngum8ph59veom06eucf810ir"
+            }
+        }
     }
 }
 dependencyResolutionManagement {
@@ -11,7 +16,12 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven(url = "https://jitpack.io")
+        maven(url = "https://jitpack.io") {
+            credentials {
+                username = "qndroid"
+                password = "Rzq123456"
+            }
+        }
     }
 }
 

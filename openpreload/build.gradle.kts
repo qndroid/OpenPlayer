@@ -19,8 +19,7 @@ android {
         release {
             isMinifyEnabled = false
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
         }
     }
@@ -48,6 +47,15 @@ afterEvaluate {
                 groupId = project.properties["groupId"].toString()
                 artifactId = "openpreload"
                 version = project.properties["version"].toString()
+            }
+        }
+
+        repositories {
+            maven(url = "https://jitpack.io") {
+                credentials {
+                    username = "qndroid"
+                    password = "Rzq123456"
+                }
             }
         }
     }

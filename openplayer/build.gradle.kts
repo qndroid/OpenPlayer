@@ -50,6 +50,15 @@ afterEvaluate {
                 version = project.properties["version"].toString()
             }
         }
+
+        repositories {
+            maven(url = "https://jitpack.io") {
+                credentials {
+                    username = "qndroid"
+                    password = "Rzq123456"
+                }
+            }
+        }
     }
 }
 

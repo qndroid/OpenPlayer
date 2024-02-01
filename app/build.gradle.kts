@@ -21,8 +21,7 @@ android {
         release {
             isMinifyEnabled = false
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
         }
     }
@@ -51,4 +50,5 @@ dependencies {
     implementation("com.google.android.material:material:1.11.0")
     implementation(project(":openplayer"))
     implementation(project(":openpreload"))
+    //implementation("com.github.RTE-Dev:RedPlayer:main-SNAPSHOT")
 }
